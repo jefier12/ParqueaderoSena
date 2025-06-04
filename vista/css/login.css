@@ -90,7 +90,7 @@
 .carrusel__contenedor {
   display: flex;
   width: 50%;
-  height:100vh;
+  height: 100vh;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
@@ -102,7 +102,6 @@
   object-fit: cover;
   scroll-snap-align: center;
 }
-
 
 @keyframes slidein {
   from {
@@ -116,4 +115,57 @@
   }
 }
 
+/* menu desplegable roles */
 
+/* Estilo del botón del dropdown como los inputs */
+.dropdown__boton {
+  margin-top: 5px;
+  padding: 16px;
+  border: 2px solid var(--color-secundario2);
+  border-radius: 5px;
+  background-color: var(--color-fondo-inputs);
+  color: var(--color-blanco);
+  font-size: 20px;
+  margin-bottom: 15px;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Contenedor del dropdown */
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+/* Menú desplegable oculto */
+.dropdown__contenido {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-fondo-inputs);
+  border: 2px solid var(--color-secundario2);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Enlaces del menú */
+.dropdown__contenido a {
+  display: block;
+  padding: 16px;
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown__contenido a:hover {
+  background-color: var(--color-secundario2);
+}
+
+/* Mostrar el menú al pasar el mouse (puedes cambiarlo a toggle JS si prefieres) */
+.dropdown:hover .dropdown__contenido {
+  display: block;
+}

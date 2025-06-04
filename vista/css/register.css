@@ -7,7 +7,7 @@ body {
 
 .registro {
   position: relative;
-  /* padding: 40px 80px; */
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +60,7 @@ body {
 
 .registro__input {
   width: 40vh;
+  height: 50px;
   padding: 30px;
   background-color: var(--color-fondo-inputs);
   color: var(--color-blanco);

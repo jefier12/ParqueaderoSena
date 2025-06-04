@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="/vista/css/login.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio de Sesion</title>
-  <link rel="stylesheet" href="/vista/css/login.css">
-</head>
+  <body>
+    <div class="contenedor-principal">
+      <div class="sesion__contenedor">
+        <div class="logo__contendor">
+          <img src="/vista/img/logo sena.png" alt="Logo SENA" class="logo" />
+        </div>
 
-<body>
-  <div class="contenedor-principal">
-    <div class="sesion__contenedor">
+        <h1 class="sesion__titulo-texto">Inicio de sesion</h1>
+        <h2 class="sesion__subtitulo-texto">
+          Ingresa a la app parqueadero sena
+        </h2>
 
-      <div class="logo__contendor">
-        <img src="/vista/img/logo sena.png" alt="Logo SENA" class="logo">
+        <label class="campo__etiqueta">Documento</label>
+        <input
+          type="text"
+          class="campo__input"
+          placeholder="ingresa tu documento"
+        />
+
+        <label class="campo__etiqueta">Contraseña</label>
+        <input
+          type="password"
+          class="campo__input"
+          placeholder="ingresa tu contraseña"
+        />
+
+        <label for="rol" class="campo__etiqueta">Rol</label>
+        <select id="rol" name="rol" class="campo__input">
+          <option value="" disabled selected>Selecciona un rol</option>
+          <option value="admin">Administrador</option>
+          <option value="usuario">Usuario</option>
+          <option value="invitado">Invitado</option>
+        </select>
+
+        <button class="sesion__boton">Iniciar sesion</button>
+
+        <p class="sesion__registro">
+          ¿no tienes cuenta? <a href="/vista/html/registro.html">Registrate</a>
+        </p>
       </div>
 
-      <h1 class="sesion__titulo-texto">Inicio de sesion</h1>
-      <h2 class="sesion__subtitulo-texto">Ingresa a la app parqueadero sena</h2>
-
-      <label class="campo__etiqueta">Documento</label>
-      <input type="text" class="campo__input" placeholder="ingresa tu documento">
-
-      <label class="campo__etiqueta">Contraseña</label>
-      <input type="password" class="campo__input" placeholder="ingresa tu contraseña">
-
-      <button class="sesion__boton">Iniciar sesion</button>
-
-      <p class="sesion__registro">
-        ¿no tienes cuenta? <a href="/vista/html/registro.html">Registrate</a>
-      </p>
-    </div>
-
-    <!-- <div class="carrusel">
       <div class="carrusel__contenedor">
         <img class="carrusel__item" src="/vista/img/estacionamiento1.jpg" />
         <img class="carrusel__item" src="/vista/img/estacionamiento2.png" />
-        <img class="carrusel__item" src="/vista/img/estacionamiento1.jpg" />
+        <img class="carrusel__item" src="/vista/img/estacionamiento3.jpg" />
       </div>
-    </div> -->
-
-
-    <div class="carrusel__contenedor">
-      <img class="carrusel__item" src="/vista/img/estacionamiento1.jpg" />
-      <img class="carrusel__item" src="/vista/img/estacionamiento2.png" />
-      <img class="carrusel__item" src="/vista/img/estacionamiento3.jpg" />
     </div>
-  </div>
-</body>
-
-
+  </body>
 </html>
