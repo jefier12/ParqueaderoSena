@@ -1,0 +1,92 @@
+@import url(/vista/css/register.css);
+@import url(/vista/css/style.css);
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var();
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
+.header {
+  background-color: #00b300;
+  padding: 2.5rem 2rem;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+
+.main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.intro {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.intro__content {
+  flex: 1;
+  margin-right: 2rem;
+
+}
+
+.intro__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+
+}
+
+.intro__description {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+  width: 70%;
+  margin-left: 15px;
+}
+
+.intro__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.intro__image-container {
+  width: 35%;
+  flex-shrink: 0;
+  margin-right: 150px;
+}
+
+.intro__image {
+  display: block;
+  width: 100%;
+  height: 50vh;
+}

@@ -1,58 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio de Sesion</title>
-    <link rel="stylesheet" href="/vista/css/login.css" />
-  </head>
 
-  <body>
-    <div class="contenedor-principal">
-      <div class="sesion__contenedor">
-        <div class="logo__contendor">
-          <img src="/vista/img/logo sena.png" alt="Logo SENA" class="logo" />
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parqueadero Sena</title>
+  <link rel="stylesheet" href="/vista/css/home.css">
+</head>
 
-        <h1 class="sesion__titulo-texto">Inicio de sesion</h1>
-        <h2 class="sesion__subtitulo-texto">
-          Ingresa a la app parqueadero sena
-        </h2>
+<body>
+  <header class="header">
+    <h1 class="header__title">Parqueadero Sena</h1>
+  </header>
 
-        <label class="campo__etiqueta">Documento</label>
-        <input
-          type="text"
-          class="campo__input"
-          placeholder="ingresa tu documento"
-        />
-
-        <label class="campo__etiqueta">Contraseña</label>
-        <input
-          type="password"
-          class="campo__input"
-          placeholder="ingresa tu contraseña"
-        />
-
-        <label for="rol" class="campo__etiqueta">Rol</label>
-        <select id="rol" name="rol" class="campo__input">
-          <option value="" disabled selected>Selecciona un rol</option>
-          <option value="admin">Administrador</option>
-          <option value="usuario">Usuario</option>
-          <option value="invitado">Invitado</option>
-        </select>
-
-        <button class="sesion__boton">Iniciar sesion</button>
-
-        <p class="sesion__registro">
-          ¿no tienes cuenta? <a href="/vista/html/registro.html">Registrate</a>
+  <main class="main">
+    <section class="intro">
+      <div class="intro__content">
+        <h2 class="intro__title">Gestión y Control<br>de Parqueadero.</h2>
+        <p class="intro__description">
+          "Una web de gestión de parqueaderos de autos permite optimizar el control de entradas y salidas, así como
+          mejorar la disponibilidad y organización de los espacios."
         </p>
+        <div class="intro__buttons">
+          <a class="registro__boton" href="/vista/html/registro.html">Registrate</a>
+          <a class="registro__boton" href="/vista/html/login.html">Iniciar Sesion</a>
+        </div>
       </div>
+      <div class="intro__image-container">
+        <img src="/vista/img/estacionamiento1.jpg" alt="Parqueadero vacío" class="intro__image">
+      </div>
+    </section>
+  </main>
+</body>
 
-      <div class="carrusel__contenedor">
-        <img class="carrusel__item" src="/vista/img/estacionamiento1.jpg" />
-        <img class="carrusel__item" src="/vista/img/estacionamiento2.png" />
-        <img class="carrusel__item" src="/vista/img/estacionamiento3.jpg" />
-      </div>
-    </div>
-  </body>
 </html>
