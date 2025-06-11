@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="/vistauser/css/inicio.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar__logo">
+      <img src="/vista/img/logo sena blanco.png" alt="Logo SENA" class="navbar__logo-img" />
+    </div>
+    <nav class="navbar__menu">
+      <a href="/vistauser/html/inicio.html" class="navbar__item">Inicio</a>
+      <a href="/vistauser/html/perfil.html" class="navbar__item">Perfil</a>
+      <a href="/vistauser/html/vehiculos.html" class="navbar__item">Tus vehículos</a>
+      <a href="/vistauser/html/historial.html" class="navbar__item">Historial</a>
+    </nav>
+    <div class="navbar__usuario">
+      <span class="navbar__bienvenida">Bienvenido(a) Jefier Stevan Briceño Vera</span>
+      <a href="logout.html" class="navbar__logout">Cerrar Sesión</a>
+    </div>
+  </header>
+
+  <main class="inicio">
+    <section class="inicio__bienvenida">
+      <h2 class="inicio__titulo">Panel de Inicio</h2>
+      <p class="inicio__mensaje">
+        Aquí puedes ver un resumen de tu actividad y acceder rápidamente a las funciones principales.
+      </p>
+    </section>
+
+    <section class="inicio__resumen">
+      <div class="inicio__card">
+        <h3 class="inicio__card-titulo">🚗 Vehículos Registrados</h3>
+        <p class="inicio__card-dato">3</p>
+      </div>
+      <div class="inicio__card">
+        <h3 class="inicio__card-titulo">📍 Última Entrada</h3>
+        <p class="inicio__card-dato">10/06/2025 - 14:30</p>
+      </div>
+      <div class="inicio__card">
+        <h3 class="inicio__card-titulo">📊 Último Informe</h3>
+        <p class="inicio__card-dato">Semanal - 08/06/2025</p>
+      </div>
+    </section>
+
+    <section class="inicio__acciones">
+      <a href="/vistauser/html/vehiculos.html" class="inicio__boton">+ Registrar Vehículo</a>
+      <a href="/vistauser/html/historial.html" class="inicio__boton">Ver Historial</a>
+    </section>
+  </main>
+</body>
+
+</html>
